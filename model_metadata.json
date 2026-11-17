@@ -1,0 +1,78 @@
+{
+    "model_name": "Decision Tree",
+    "threshold": 0.05,
+    "target_column": "Leakage_Flag",
+    "target_mapping": {
+        "0": "No Leakage",
+        "1": "Leakage"
+    },
+    "numerical_features": [
+        "Pressure_PSI",
+        "Flow_Rate_Lmin",
+        "Temperature_C",
+        "Vibration_mms",
+        "RPM",
+        "Operational_Hours_h",
+        "Latitude",
+        "Longitude"
+    ],
+    "categorical_features": [
+        "Zone",
+        "Block",
+        "Pipe"
+    ],
+    "input_features": [
+        "Pressure_PSI",
+        "Flow_Rate_Lmin",
+        "Temperature_C",
+        "Vibration_mms",
+        "RPM",
+        "Operational_Hours_h",
+        "Zone",
+        "Block",
+        "Pipe",
+        "Latitude",
+        "Longitude"
+    ],
+    "categorical_options": {
+        "Zone": [
+            "Zone_1",
+            "Zone_2",
+            "Zone_3",
+            "Zone_4",
+            "Zone_5"
+        ],
+        "Block": [
+            "Block_1",
+            "Block_2",
+            "Block_3",
+            "Block_4",
+            "Block_5"
+        ],
+        "Pipe": [
+            "Pipe_1",
+            "Pipe_2",
+            "Pipe_3",
+            "Pipe_4",
+            "Pipe_5"
+        ]
+    },
+    "numerical_defaults": {
+        "Pressure_PSI": 60.134655918954266,
+        "Flow_Rate_Lmin": 79.73824211380864,
+        "Temperature_C": 100.04958723034244,
+        "Vibration_mms": 3.0096295690955843,
+        "RPM": 1997.5949522246672,
+        "Operational_Hours_h": 5489.0,
+        "Latitude": 25.193183650125114,
+        "Longitude": 55.270520772329526
+    },
+    "evaluation_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0
+    }
+}
